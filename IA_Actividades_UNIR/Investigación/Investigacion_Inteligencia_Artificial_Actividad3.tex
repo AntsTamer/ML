@@ -1,0 +1,122 @@
+\documentclass[review]{elsarticle}
+
+\usepackage{lineno,hyperref}
+\usepackage{mathtools}
+\usepackage{array}
+\usepackage{colortbl}
+
+\modulolinenumbers[5]
+
+
+\usepackage[english,spanish]{babel}
+\usepackage{blindtext}
+\usepackage{xpatch}
+
+%%%%%%%%%%%%%%%%%%%%%%%
+%% Elsevier bibliography styles
+%%%%%%%%%%%%%%%%%%%%%%%
+%% To change the style, put a % in front of the second line of the current style and
+%% remove the % from the second line of the style you would like to use.
+%%%%%%%%%%%%%%%%%%%%%%%
+
+%% Numbered
+%\bibliographystyle{model1-num-names}
+
+%% Numbered without titles
+%\bibliographystyle{model1a-num-names}
+
+%% Harvard
+%\bibliographystyle{model2-names.bst}\biboptions{authoryear}
+
+%% Vancouver numbered
+%\usepackage{numcompress}\bibliographystyle{model3-num-names}
+
+%% Vancouver name/year
+%\usepackage{numcompress}\bibliographystyle{model4-names}\biboptions{authoryear}
+
+%% APA style
+%\bibliographystyle{model5-names}\biboptions{authoryear}
+
+%% AMA style
+%\usepackage{numcompress}\bibliographystyle{model6-num-names}
+
+%% `Elsevier LaTeX' style
+\bibliographystyle{elsarticle-num}
+%%%%%%%%%%%%%%%%%%%%%%%
+\journal{UNIR}
+
+\begin{document}
+
+
+\begin{frontmatter}
+
+\title{Tema 3 Resumen - Introducción al método científico en investigación}
+
+%% Group authors per affiliation:
+\author{Federico Damián}
+
+
+
+
+\renewcommand{\abstractname}{}    % clear the title
+\begin{abstract}
+	En este documento se expone un breve resumen del tema 3 de la asignatura de Investigación en Inteligencia Artificial, iniciando al lector en la investigación y sus herramientas.\cite{UNED,tema}
+\end{abstract}
+
+
+
+\begin{keyword}
+Científico, \LaTeX\
+\end{keyword}
+
+\end{frontmatter}
+
+\linenumbers
+
+\section{Introducción}
+La inteligencia artificial se trata de un ámbito
+científico y esta ciencia tiene que ver con la obtención de conocimiento.\cite{WEBSITE:2}
+
+\begin{figure}[htb]
+	\centering	\includegraphics[width=50mm]{esquema.png}
+	\caption{Esquema}
+	\label{Esquema}
+\end{figure}
+
+\section{La ciencia y su método}
+El método científico empezará por la pregunta que planteamos como marco de trabajo y continuará por los siguientes pasos:\cite{WEBSITE:1}
+
+\begin{table}[h!]
+	\begin{center}
+
+		\begin{tabular}{l|c}
+			Paso 1 & Observación\\
+			Paso 2 & Hipótesis\\
+			Paso 3 & Experimentación\\
+			Paso 4 & Conclusión\\
+			
+		\end{tabular}
+	\caption{Pasos del método científico.}
+	\label{tab:Pasos del metodo}
+	\end{center}
+\end{table}.
+
+\section{Editores de textos científicos: LaTeX}
+
+Ejemplos de ecuaciones matemáticas:\cite{WEBSITE:3}
+
+
+$$2+2=4$$
+
+\begin{equation} \label{eq:Linearecta}
+y=mx+c
+\end{equation}
+
+\begin{equation}\label{eq:Raizcuadrada}
+x=\frac{-b\pm \sqrt{b^2-4ac}}{2a}
+\end{equation}
+
+
+\bibliography{mybibfile}
+
+\end{document}
